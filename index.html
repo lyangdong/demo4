@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="public.css"/>
+    <link rel="stylesheet" href="swiper-3.3.1.min.css"/>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <script src="jquery-1.12.4.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="swiper-3.3.1.jquery.min.js"></script>
+</head>
+<style>
+    .swiper-container{
+        margin-top: 4rem;
+    }
+    .swiper-pagination-bullet{
+        width:1rem;
+        height:0.3rem;
+        border-radius: 0;
+        color:#000;
+        opacity:1;
+        background:rgba(255,255,255,0.8);
+    }
+    .swiper-pagination-bullet-active{
+        background: rgba(255,135,0,0.8);
+    }
+</style>
+<body>
+    <div id="header">
+        <a href="#">LOGO</a>
+        <span class="address">广州</span>
+        <i class="glyphicon glyphicon-map-marker"></i>
+    </div>
+    <div id="nav">
+        <ul>
+            <li class="active"><a href="#"><i class="glyphicon glyphicon-home" style="font-size: 1.8rem"></i><p>首页</p>
+            </a></li>
+            <li class="">
+                <a href="#"><i class="glyphicon glyphicon-list-alt" style="font-size: 1.8rem"></i><p>通讯录</p></a>
+            </li>
+            <li class="">
+                <a href="#">
+                    <i class="glyphicon glyphicon-comment" style="font-size: 1.8rem"><span class="badge">1</span></i>
+                    <p>消息</p></a>
+            </li>
+            <li class=""><a href="#"><i class="glyphicon glyphicon-user" style="font-size: 1.8rem"></i><p>我的</p>
+            </a></li>
+        </ul>
+    </div>
+    <div class="swiper-container swiper-container-horizontal">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/j-banner02.jpg" width="100%" height="100%" alt=""/></div>
+            <div class="swiper-slide"><img src="images/j-banner03.jpg"width="100%" height="100%"  alt=""/></div>
+            <div class="swiper-slide"><img src="images/j-banner02.jpg"width="100%" height="100%"  alt=""/></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets">
+            <span class="swiper-pagination-bullet  swiper-pagination-bullet-active"></span>
+            <span class="swiper-pagination-bullet"></span>
+            <span class="swiper-pagination-bullet"></span>
+        </div>
+    </div>
+    <div id="showUs">
+      <div class="left">
+          <a  href="#" class="my">
+              <span class="glyphicon glyphicon-user" style="font-size: 5rem"></span>
+             <p>我的社区</p>
+          </a>
+          <a  href="#" class="join">申请加入</a>
+      </div>
+      <div class="right">
+          <a href="#" class="hot">
+              <span class=" glyphicon glyphicon-search"></span>
+              <p>热门资讯</p>
+          </a>
+          <a  href="#" class="zhuanjia">
+              <span class="glyphicon glyphicon-search"></span>
+              <p>专家风采</p>
+          </a>
+          <a  href="#" class="qiyezhanshi">
+              <span class="glyphicon glyphicon-road"></span>
+              <p>企业展示</p>
+          </a>
+          <a  href="#" class="shichang">
+              <span class="glyphicon glyphicon-stats"></span>
+              <p>采销市场</p>
+          </a>
+      </div>
+  </div>
+    <div id="expert">
+        <h2>
+            <span></span>
+            知名专家
+        </h2>
+        <div class="box">
+            <a href="">
+                <img src="images/user-img0.jpg" alt=""/>
+                <dl>
+                    <dt>郭小帅</dt>
+                    <dd>机电高材生</dd>
+                    <dd>专注前端</dd>
+                </dl>
+            </a>
+        </div>
+        <div class="box">
+            <a href="#">
+                <img src="images/user-img2.png" alt=""/>
+                <dl>
+                    <dt>王二狗</dt>
+                    <dd>北大青鸟出身</dd>
+                    <dd>专注UI设计</dd>
+                </dl>
+            </a>
+        </div>
+        <div class="box">
+            <a href="#">
+                <img src="images/user-img4.png" alt=""/>
+                <dl>
+                    <dt>刘美子</dt>
+                    <dd>广工软件开发</dd>
+                    <dd>大家一起来找茬</dd>
+                </dl>
+            </a>
+        </div>
+
+          <a href="#"><div class="expert-footer">查看更多</div></a>
+    </div>
+    <div id="activity">
+        <h2>
+            <span class="glyphicon glyphicon-flag"></span>
+            热门活动
+            <a href="#">
+            </a>
+        </h2>
+        <ul>
+            <li class="li-first">
+                <a href="">
+                    <span class="free">免费</span>
+                    <span class="activity-number">246人报名</span>
+                    <img src="images/hd1.jpg" alt=""/>
+                    <span class="enroll">正在报名</span>
+                    <div class="abc">
+                        <h2>广州50KM徒步活动</h2>
+                        广州-徒步社 <span>5分钟前</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <span class="activity-number">246人报名</span>
+                    <img src="images/hd2.jpg" alt=""/>
+                    <span class="enroll enroll-green">活动进行中</span>
+                    <div class="abc">
+                        <h2>精品新装，火热抢购中</h2>
+                        潮妈购物社团<span>今天 10:40</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <span class="free">免费</span>
+                    <span class="activity-number">246人报名</span>
+                    <img src="images/hd2.jpg" alt=""/>
+                    <span class="enroll enroll-orange">已报名</span>
+                    <div class="abc">
+                        <h2>广州50KM徒步活动</h2>
+                        广州-徒步社 <span>周三 06/01 10:40</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <span class="free">免费</span>
+                    <span class="activity-number">246人报名</span>
+                    <img src="images/hd2.jpg" alt=""/>
+                    <span class="enroll enroll-black">报名截止</span>
+                    <div class="abc">
+                        <h2>广州50KM徒步活动</h2>
+                        广州-徒步社 <span>周三 06/01 10:40</span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div id="footer">
+        <h3>
+            <span class="glyphicon glyphicon-volume-up"></span>
+            热门活动
+        </h3>
+        <div class="media">
+            <a class="pull-right" href="#">
+                <img class="media-object" src="images/st1.jpg"
+                     alt="媒体对象">
+            </a>
+            <div class="media-body">
+                <a href="#">
+                    <h4 class="media-heading">互联网 + | 发家致富就是这么简单</h4>
+                    雷军说过：＂只要站在风口，猪也能飞起来＂毫无疑问　现在...
+                </a>
+            </div>
+            <p>
+                <span><i class="glyphicon glyphicon-eye-open"></i>149</span>
+                <span><i class="glyphicon glyphicon-thumbs-up"></i>30</span>
+                <span class="time">5分钟前</span></p>
+        </div>
+        <div class="media">
+            <a class="pull-right" href="#">
+                <img class="media-object" src="images/st3.jpg"
+                     alt="媒体对象">
+            </a>
+            <div class="media-body">
+                <a href="#">
+                    <h4 class="media-heading">林志玲低胸装搭手保镖出行胜似 "女王" </h4>
+                    早前，林志玲一袭贵妇装出席某某颁奖活动。期间，她从贵宾部起身...
+                </a>
+            </div>
+            <p>
+                <span><i class="glyphicon glyphicon-eye-open"></i>149</span>
+                <span><i class="glyphicon glyphicon-thumbs-up"></i>30</span>
+                <span class="time">2016-5-2</span></p>
+        </div>
+        <div class="media">
+            <a class="pull-right" href="#">
+                <img class="media-object" src="images/st4.jpg"
+                     alt="媒体对象">
+            </a>
+            <div class="media-body">
+                <a href="#">
+                    <h4 class="media-heading">互联网 + | 发家致富就是这么简单</h4>
+                    雷军说过：＂只要站在风口，猪也能飞起来＂毫无疑问　现在...
+                </a>
+            </div>
+            <p>
+                <span><i class="glyphicon glyphicon-eye-open"></i>149</span>
+                <span><i class="glyphicon glyphicon-thumbs-up"></i>30</span>
+                <span class="time">2016-5-2</span></p>
+        </div>
+        <div class="media">
+            <a class="pull-right" href="#">
+                <img class="media-object" src="images/st2.jpg"
+                     alt="媒体对象">
+            </a>
+            <div class="media-body">
+                <a href="#">
+                    <h4 class="media-heading">桂林八旬渔民模特兄弟 供人拍照红遍全球</h4>
+                    雷军说过：＂只要站在风口，猪也能飞起来＂毫无疑问　现在...
+                </a>
+            </div>
+            <p>
+                <span><i class="glyphicon glyphicon-eye-open"></i>149</span>
+                <span><i class="glyphicon glyphicon-thumbs-up"></i>30</span>
+                <span class="time">2016-5-2</span></p>
+        </div>
+    </div>
+
+</body>
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            spaceBetween: 50,
+            centeredSlides: true,
+            autoplay: 3000,
+            autoplayDisableOnInteraction: false
+        });
+</script>
+</html>
